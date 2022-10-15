@@ -45,10 +45,12 @@ label start:
     y "Hmmm... it's so hard to choose!"
     
 label mainchoice:
+
+    scene bg dojo with fade
     
     if seen_guanzi == 0 or seen_laozi == 0:
 
-        "Pick which philosopher you would like to train with."
+        "Pick which philosopher you would like to train with today."
 
         menu:
 
