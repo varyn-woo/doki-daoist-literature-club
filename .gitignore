@@ -125,7 +125,7 @@ log.txt
 errors.txt
 traceback.txt
 lint.txt
-game/saves/
+game/saves/*
 
 # Rope project settings
 .ropeproject
