@@ -46,22 +46,29 @@ label start:
     
 label mainchoice:
     
-    if guanzi_score >= 0 or laozi_score >= 0:
+    if seen_guanzi == 0 or seen_laozi == 0:
+
+        "Pick which philosopher you would like to train with."
+
         menu:
 
-            "Train with Guanzi" if guanzi_score >= 0:
-                if seen_guanzi == 0:
-                    jump gday1start
-                elif seen_guanzi == 1:
-                    jump gday2start
+            "Train with Guanzi" if seen_guanzi == 0:
+                jump gday1start
 
-            "Train with Laozi" if laozi_score >= 0:
-                if seen_laozi == 0:
-                    jump lday1start
-                elif seen_laozi == 1:
-                    jump lday2start
+            "Train with Laozi" if seen_laozi == 0:
+                jump lday1start
 
 label end:
+
+    "You got to know two philosophers today."
+
+    show guanzi at left with fade
+
+    "Guanzi"
+
+    show laozi at right with fade
+
+    "and Laozi."
 
     if laozi_score < 0 and guanzi_score < 0:
         jump badending
@@ -72,11 +79,85 @@ label end:
     elif laozi_score > 0:
         jump laoziending
 
-    else guanzi_score > 0:
+    else:
         jump guanziending
 
 label badending:
 
+    show guanzi angry at left
 
+    g "I have to say, you have much to improve on."
 
+    show laozi disappointed at right
+
+    l "You really didn't absorb anything we told you, did you?"
+
+    hide laozi with dissolve
+    hide guanzi with dissolve
+
+    "The two philosophers go on a date without you, leaving you behind to stew in your own mistakes."
+
+    "THE END."
+
+    return
+
+label goodending:
+
+    g "You were a very good student!"
+
+    if not chaotic:
+        g "You also managed to avoid chaos."
+
+    l "I think you have potential, sage in training."
+
+    g "We'd love to..."
+
+    l "...invite you on a date with both of us."
+
+    "The two philosophers take you on a date, and you all take over the world together."
+
+    "THE END."
+
+    return
+
+label laoziending:
+
+    show guanzi angry at left
+
+    g "I have to say, you have much to improve on."
+
+    show laozi smiling at right
+    
+    l "Perhaps the Inward Training was not to your taste, but no matter."
+
+    l "You understood the Dao De Jing well."
+
+    l "I'd be happy to follow the path of the sage with you at my side."
+
+    hide guanzi with dissolve
+
+    "You go on a date with Laozi and rule the world through the teachings of the Way."
+
+    "THE END."
+
+    return
+
+label guanziending:
+
+    show laozi disappointed at right
+
+    l "You really didn't absorb anything we told you, did you?"
+
+    g "No, they may not have understood your confusing and manipulative teachings,"
+
+    g "but they understood my inward training perfectly."
+
+    g "Don't listen to Laozi. I'm happy to guide you on your journey through the Way."
+
+    hide laozi with dissolve
+
+    "You go on a date with Guanzi and learn to center yourself with him by your side."
+
+    "THE END."
+    
     return

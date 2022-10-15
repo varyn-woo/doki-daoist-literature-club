@@ -78,6 +78,8 @@ label lday1start:
     l "Only for now."
 
     y "That's only very mildly reassuring."
+    
+    "With that, Laozi mysteriously disappears."
 
     hide laozi with fade
 
@@ -400,7 +402,7 @@ label lday1end:
         l "but hopefully you learned something?"
 
     else:
-        show laozi disapponted
+        show laozi disappointed
 
         l "Well, that was... an experience."
 
@@ -414,7 +416,7 @@ label lday1end:
 
         hide laozi
 
-        jump end
+        jump mainchoice
 
     l "You're welcome to come back and learn more tomorrow."
 
@@ -424,4 +426,4 @@ label lday1end:
 
     scene bg dojo with dissolve
 
-    jump end
+    jump mainchoice

@@ -17,9 +17,7 @@ label gday2start:
     menu:
         "Sure!":
             $ guanzi_score += 1
-            jump go
 
-        "I don't think I'm ready for that."
+        "I don't think I'm ready for that.":
             $ guanzi_score -= 1
-            jump nvm
 

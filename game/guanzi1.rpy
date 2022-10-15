@@ -289,10 +289,10 @@ label gday1end:
 
         hide guanzi
 
-        jump end
+        jump mainchoice
 
     g "Feel free to find me again to go more in depth about inward training."
 
     hide guanzi
 
-    jump end
+    jump mainchoice
