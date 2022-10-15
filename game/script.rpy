@@ -61,13 +61,22 @@ label mainchoice:
                 elif seen_laozi == 1:
                     jump lday2start
 
-    else:
+label end:
+
+    if laozi_score < 0 and guanzi_score < 0:
         jump badending
+
+    elif laozi_score > 0 and guanzi_score > 0:
+        jump goodending
+
+    elif laozi_score > 0:
+        jump laoziending
+
+    else guanzi_score > 0:
+        jump guanziending
 
 label badending:
 
 
-
-label end:
 
     return
