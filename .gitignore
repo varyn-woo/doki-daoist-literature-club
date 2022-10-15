@@ -125,6 +125,7 @@ log.txt
 errors.txt
 traceback.txt
 lint.txt
+saves/
 
 # Rope project settings
 .ropeproject
