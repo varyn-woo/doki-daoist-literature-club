@@ -1,6 +1,13 @@
 # Doki Daoist Literature Club
 A Chinese philosopher dating sim.
 
+## How do I play?
+1. Go to the [Beta Test Version](https://drive.google.com/drive/folders/1DIM5ZfGbooWikFN5F0CAlzJQFKe4l-0N?usp=sharing) GDrive folder.
+2. Select the appropriate (Mac or Windows/Linux) distribution zip and download it.
+3. Unzip and double click the Doki Daoist Literature Club app inside the folder to play.
+
+*Note:* The beta version is incomplete and does not contain all game content. It's mostly a proof of concept and should be treated as such.
+
 ## Why?
 This project was created for the midterm annotation assignment for Maura Dykstra's H 138 (The Way) class at Caltech.
 
