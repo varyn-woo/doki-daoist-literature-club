@@ -386,14 +386,17 @@ label lday1end:
     if laozi_score >= 3:
         show laozi smiling
         l "You seem very level-headed and wise."
-        l ""
+        l "I wouldn't quite go so far as to say I'd trust you with the entire nation of China today,"
+        l "but I might say it at some point in the future."
+        show laozi -smiling
     
     elif laozi_score > 0:
-        l "I'm glad you learned a bit about Inward Training."
+        l "You did well today."
+        l "Remember to always keep yourself in check,"
+        l "and follow the Way without becoming overzealous about it."
 
     elif laozi_score == 0:
         l "I'm not sure what you got out of our conversation,"
-
         l "but hopefully you learned something?"
 
     else:
@@ -401,26 +404,24 @@ label lday1end:
 
         l "Well, that was... an experience."
 
-        l "Maybe you're better suited to Laozi's teachings,"
+        l "Maybe you'd do better with Guanzi's softer teaching style."
 
-        l "but do bear in mind that he has even higher standards than me."
+        show laozi smiling
 
-        show laozi -disappointed
+        l "If you come back, I will make you my tax collector,"
 
-        l "Good luck in your philosophical ventures, I guess."
+        l "a scapegoat for the people to hate whenever times get tough."
 
         hide laozi
 
-        "Who will you choose to train with tomorrow?"
+        jump end
 
-        jump mainchoice
+    l "You're welcome to come back and learn more tomorrow."
 
-    l "Feel free to find me again to go more in depth about inward training."
+    l "I enjoyed your company, so I hope to see you again!"
 
     hide laozi
 
     scene bg dojo with dissolve
 
-    "Who will you choose to train with tomorrow?"
-
-    jump mainchoice
+    jump end

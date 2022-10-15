@@ -289,14 +289,10 @@ label gday1end:
 
         hide guanzi
 
-        "Who will you choose to train with tomorrow?"
-
-        jump mainchoice
+        jump end
 
     g "Feel free to find me again to go more in depth about inward training."
 
     hide guanzi
 
-    "Who will you choose to train with tomorrow?"
-
-    jump mainchoice
+    jump end
