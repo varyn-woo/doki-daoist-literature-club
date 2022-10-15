@@ -1,5 +1,5 @@
 # Doki Daoist Literature Club
-A small Chinese philosopher dating sim.
+A Chinese philosopher dating sim.
 
 ## Why?
 This project was created for the midterm annotation assignment for Maura Dykstra's H 138 (The Way) class at Caltech.
