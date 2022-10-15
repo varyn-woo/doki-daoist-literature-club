@@ -115,6 +115,17 @@ venv.bak/
 .spyderproject
 .spyproject
 
+# Compiled Ren'Py files.
+*.rpyc
+*.rpyb
+*.rpymc
+
+# Ren'Py log files.
+log.txt
+errors.txt
+traceback.txt
+lint.txt
+
 # Rope project settings
 .ropeproject
 
