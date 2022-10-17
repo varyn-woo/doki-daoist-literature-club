@@ -44,6 +44,7 @@ label lday1start:
             l "It is the plane of emptiness, after all."
 
         "Is this your bedroom? *wink wink*":
+            $ horny_score += 1
             show laozi disappointed
             l "Please show some restraint."
             $ laozi_score -= 1
@@ -221,7 +222,7 @@ label palace:
 
     l "As chapter 21 of the Dao De Jing says..."
 
-    l "the Way is a thing waxes and wanes."
+    l "the Way is a thing that waxes and wanes."
 
     show laozi
 
@@ -312,7 +313,7 @@ label knowledge:
 
     l "I help synthesize the goals, lives, and wisdom of all people over which I have power."
 
-    l "I only facilitate communication and decide what nees to be said."
+    l "I only facilitate communication and decide what needs to be said."
 
     l "I do not have anything special that others don't."
 
@@ -376,6 +377,7 @@ label huh:
             show laozi -smiling
 
         "God, you're so hot.":
+            $ horny_score += 1
             show laozi disappointed
             l "I've been told I'm rather cold, actually."
             l "And I'm definitely not a god."

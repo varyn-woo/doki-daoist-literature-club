@@ -11,6 +11,7 @@ default seen_guanzi = 0
 default seen_laozi = 0
 default guanzi_score = 0
 default laozi_score = 0
+default horny_score = 0
 
 # The game starts here.
 
@@ -72,7 +73,10 @@ label end:
 
     "and Laozi."
 
-    if laozi_score < 0 and guanzi_score < 0:
+    if horny_score == 5:
+        jump hornyending
+
+    elif laozi_score < 0 and guanzi_score < 0:
         jump badending
 
     elif laozi_score > 0 and guanzi_score > 0:
@@ -83,6 +87,22 @@ label end:
 
     else:
         jump guanziending
+
+label hornyending:
+
+    show guanzi angry at left
+
+    g "You really need to detach yourself from worldly desires."
+
+    show laozi disappointed at right
+
+    l "Agreed. This attitude of yours is not as attractive as you seem to think it is."
+
+    "BONK! Go to horny jail."
+
+    "THE END."
+
+    return    
 
 label badending:
 

@@ -106,6 +106,7 @@ label order:
             $ guanzi_score += 1
         
         "That explanation was sooo sexy!":
+            $ horny_score += 1
             show guanzi blush
             g "Uhhh... ok?"
             show guanzi -blush
@@ -190,6 +191,7 @@ label body:
             $ guanzi_score += 1
 
         "Why would I eat food when I could simply kiss you?":
+            $ horny_score += 1
             show guanzi blush
             g "Uhhh..."
             show guanzi -blush
@@ -208,6 +210,7 @@ label sex:
             $ guanzi_score += 1
 
         "I want to have *interactions* with you ;)":
+            $ horny_score += 1
             show guanzi blush
             g "I don't really know what to say to that..."
             show guanzi -blush
